@@ -7,6 +7,6 @@
   <title>My WordPress Theme</title>
 </head>
 <body>
-  これは、はじめてのWordPressテーマです。
+  これは、はじめてのWordPressテーマです。test
 </body>
 </html>
