@@ -1,2 +1,3 @@
 # WordPressTheme
-My WordPress Theme
+
+OUNI studio で紹介している自作WordPressテーマです。
