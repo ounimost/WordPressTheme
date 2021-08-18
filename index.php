@@ -10,25 +10,15 @@
   <h1>記事の一覧</h1>
 
   <div>
-    <hr>
-    <div>
-      <h3>記事のタイトル１</h3>
-      <p>カテゴリ１</p>
-      <time>2021.08.17</time>
-    </div>
-    <hr>
-    <div>
-      <h3>記事のタイトル２</h3>
-      <p>カテゴリ２</p>
-      <time>2021.08.16</time>
-    </div>
-    <hr>
-    <div>
-      <h3>記事のタイトル３</h3>
-      <p>カテゴリ３</p>
-      <time>2021.08.15</time>
-    </div>
-  </div>
-  
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();　?>
+        <div>
+          <hr>
+          <h3><a><?php the_title(); ?></a></h3>
+					<p><a><?php the_category(', '); ?></a></p>
+					<time><?php the_time('Y.m.d'); ?></time=>
+				</div>
+			<?php endwhile; endif;　?>
+		</div>
+	</div>
 </body>
 </html>
