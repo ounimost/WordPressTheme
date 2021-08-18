@@ -9,15 +9,24 @@
 <body>
   <h1>記事の一覧</h1>
 
-  <div>
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();　?>
+	<div>
+      <!-- 投稿の数だけ繰り返して処理する -->
+			<?php while ( have_posts() ) :　?>
+        
+        <!-- 投稿を取得 -->
+        <?php the_post(); ?>
+
         <div>
           <hr>
-          <h3><a><?php the_title(); ?></a></h3>
-					<p><a><?php the_category(', '); ?></a></p>
-					<time><?php the_time('Y.m.d'); ?></time=>
+          <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
+          <h3><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
+          <!-- カテゴリを表示する -->
+					<p><?php the_category(', '); ?></p>
+          <!-- 投稿日時をを表示する -->
+					<time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time=>
 				</div>
-			<?php endwhile; endif;　?>
+
+			<?php endwhile;　?>
 		</div>
 	</div>
 </body>
