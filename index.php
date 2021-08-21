@@ -24,6 +24,10 @@
           <p><?php the_category(', '); ?></p>
           <!-- 投稿日時をを表示する -->
           <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+          <!-- サムネイル画像を表示する -->
+          <figure>
+            <?php the_post_thumbnail( 'thumbnail' ); ?>
+          </figure>
         </div>
 
       <?php endwhile; ?>
