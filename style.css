@@ -1,8 +1,9 @@
 /*
-Theme Name: はじめての自作テーマ編集後
+Theme Name: はじめての自作テーマ
 */
 
 #container {
+  /* Grid表示する */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;

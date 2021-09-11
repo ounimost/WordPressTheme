@@ -19,7 +19,6 @@
         <?php the_post(); ?>
 
         <div id="new-post">
-          <hr>
           <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
           <h3><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
           <!-- カテゴリを表示する -->
