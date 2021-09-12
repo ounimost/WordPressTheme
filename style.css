@@ -32,6 +32,8 @@ main {
 }
 #new-post {
   max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 h2#top-header {
   text-align: center;
@@ -59,6 +61,7 @@ p#new-post-info {
   transition: color 0.5s;
   text-decoration: none;
   color: dimgray;
+  margin-right: 10px;
 }
 #new-post-category > a:hover {
   color: silver;
