@@ -45,6 +45,16 @@ h2#top-header {
   z-index: 1;
   top: 0px;
 }
+#new-post-category > a {
+  transition: color 0.5s;
+  font-size: x-small;
+  font-weight: bold;
+  color: dimgray;
+}
+#new-post-category > a:hover {
+  color: silver;
+  text-decoration: none;
+}
 
 time#new-post-date {
   color: #b4b4b4;

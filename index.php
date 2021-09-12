@@ -25,13 +25,13 @@
             <!-- 投稿を表示 -->
             <div id="new-post">
 
-              <!-- サムネイル画像を表示する -->
-              <figure>
+              <div>
+                <!-- サムネイル画像を表示する -->
                 <?php the_post_thumbnail( array( 250, 200 ), array( 'id' => 'new-post-img' ) ); ?>
-              </figure>
-
-              <!-- カテゴリを表示する -->
-              <p id="new-post-category"><?php the_category(', '); ?></p>
+                
+                <!-- カテゴリを表示する -->
+                <p id="new-post-category"><?php the_category(', '); ?></p>
+              </div>
 
               <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
               <h3 id="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
