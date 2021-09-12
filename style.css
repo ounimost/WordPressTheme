@@ -42,6 +42,7 @@ h3#new-post-header > a {
   font-size: small;
   font-weight: bold;
   transition: color 0.5s;
+  text-decoration: none;
 }
 
 #new-post-img {
@@ -51,11 +52,12 @@ h3#new-post-header > a {
 
 p#new-post-info {
   font-size: x-small;
-  font-weight: bold;
-  color: dimgray;
+  margin-top: 3px;
 }
 #new-post-category > a {
   transition: color 0.5s;
+  text-decoration: none;
+  color: dimgray;
 }
 #new-post-category > a:hover {
   color: silver;
@@ -64,6 +66,5 @@ p#new-post-info {
 
 time#new-post-date {
   color: #b4b4b4;
-  font-size: x-small;
   letter-spacing: 0.08em;
 }
