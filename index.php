@@ -27,7 +27,7 @@
 
               <!-- サムネイル画像を表示する -->
               <figure>
-                <?php the_post_thumbnail( array( 250, 150 ), array( 'id' => 'new-post-img' ) ); ?>
+                <?php the_post_thumbnail( array( 250, 200 ), array( 'id' => 'new-post-img' ) ); ?>
               </figure>
 
               <!-- カテゴリを表示する -->

@@ -26,6 +26,10 @@ main {
   grid-gap: 30px;
 }
 
+#new-post {
+  max-width: 250px;
+}
+
 h2#top-header {
   text-align: center;
 }
