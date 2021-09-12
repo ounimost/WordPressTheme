@@ -34,17 +34,6 @@ h2#top-header {
   text-align: center;
 }
 
-#new-post-category {
-  padding: 8px 12px;
-  left: auto;
-  background-color: rgb(232, 232, 232);
-  position: absolute;
-  display: inline-block;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  z-index: 1;
-  top: 0px;
-}
 #new-post-category > a {
   transition: color 0.5s;
   font-size: x-small;
@@ -64,6 +53,9 @@ time#new-post-date {
   margin-bottom: 0px;
 }
 
+h3#new-post-header {
+  margin: 0;
+}
 h3#new-post-header > a {
   color: dimgray;
   font-size: small;
