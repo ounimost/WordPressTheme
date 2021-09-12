@@ -9,30 +9,37 @@
   <?php wp_head(); ?>
 </head>
 <body>
-  <h1>記事の一覧</h1>
+  <main>
+    <!------------------------------------------------>
+    <!-- 新着の記事一覧 -->
+    <!------------------------------------------------>
+    <div id="new-post-list">
+      <h2 id="top-header">記事の一覧</h2>
+      <div id="container">
+          <!-- 投稿の数だけ繰り返して処理する -->
+          <?php while (have_posts()) : ?>
+            
+            <!-- 投稿を取得 -->
+            <?php the_post(); ?>
 
-  <div id="container">
-      <!-- 投稿の数だけ繰り返して処理する -->
-      <?php while (have_posts()) : ?>
-        
-        <!-- 投稿を取得 -->
-        <?php the_post(); ?>
+            <!-- 投稿を表示 -->
+            <div id="new-post">
+              <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
+              <h3 id="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
+              <!-- カテゴリを表示する -->
+              <p id="new-post-category"><?php the_category(', '); ?></p>
+              <!-- 投稿日時をを表示する -->
+              <time id="new-post-id" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+              <!-- サムネイル画像を表示する -->
+              <figure id="new-post-img">
+                <?php the_post_thumbnail( 'thumbnail' ); ?>
+              </figure>
+            </div>
 
-        <div id="new-post">
-          <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
-          <h3><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
-          <!-- カテゴリを表示する -->
-          <p><?php the_category(', '); ?></p>
-          <!-- 投稿日時をを表示する -->
-          <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
-          <!-- サムネイル画像を表示する -->
-          <figure>
-            <?php the_post_thumbnail( 'thumbnail' ); ?>
-          </figure>
+          <?php endwhile; ?>
         </div>
-
-      <?php endwhile; ?>
-    </div>
-  </div>
+      </div>
+    </div> 
+  </main>
 </body>
 </html>

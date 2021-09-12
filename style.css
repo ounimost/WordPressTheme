@@ -1,6 +1,22 @@
 /*
-Theme Name: はじめての自作テーマ
+Theme Name: はじめてのWordPress自作テーマ
 */
+
+body {
+  background-color: gainsboro;
+}
+
+main {
+  max-width: 720px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#new-post-list {
+  background-color: white;
+}
 
 #container {
   /* Grid表示する */
