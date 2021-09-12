@@ -24,16 +24,21 @@
 
             <!-- 投稿を表示 -->
             <div id="new-post">
-              <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
-              <h3 id="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
+
+              <!-- サムネイル画像を表示する -->
+              <figure>
+                <?php the_post_thumbnail( array( 224, 126 ), array( 'id' => 'new-post-img' ) ); ?>
+              </figure>
+
               <!-- カテゴリを表示する -->
               <p id="new-post-category"><?php the_category(', '); ?></p>
+
+              <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
+              <h3 id="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
+
               <!-- 投稿日時をを表示する -->
-              <time id="new-post-id" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
-              <!-- サムネイル画像を表示する -->
-              <figure id="new-post-img">
-                <?php the_post_thumbnail( 'thumbnail' ); ?>
-              </figure>
+              <time id="new-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+
             </div>
 
           <?php endwhile; ?>
