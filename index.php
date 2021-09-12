@@ -31,12 +31,12 @@
               <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
               <h3 id="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
 
-              <!-- カテゴリを表示する -->
-              <p id="new-post-category"><?php the_category(', '); ?></p>
-
-              <!-- 投稿日時をを表示する -->
-              <time id="new-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
-
+              <p id="new-post-info">
+                <!-- カテゴリを表示する -->
+                <span id="new-post-category"><?php the_category(', '); ?></span>
+                <!-- 投稿日時をを表示する -->
+                <time id="new-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+              </p>
             </div>
 
           <?php endwhile; ?>

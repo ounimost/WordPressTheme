@@ -34,25 +34,6 @@ h2#top-header {
   text-align: center;
 }
 
-#new-post-category > a {
-  transition: color 0.5s;
-  font-size: x-small;
-  font-weight: bold;
-  color: dimgray;
-}
-#new-post-category > a:hover {
-  color: silver;
-  text-decoration: none;
-}
-
-time#new-post-date {
-  color: #b4b4b4;
-  font-size: x-small;
-  letter-spacing: 0.08em;
-  display: block;
-  margin-bottom: 0px;
-}
-
 h3#new-post-header {
   margin: 0;
 }
@@ -66,4 +47,23 @@ h3#new-post-header > a {
 #new-post-img {
   max-width: 100%;
   height: auto;
+}
+
+p#new-post-info {
+  font-size: x-small;
+  font-weight: bold;
+  color: dimgray;
+}
+#new-post-category > a {
+  transition: color 0.5s;
+}
+#new-post-category > a:hover {
+  color: silver;
+  text-decoration: none;
+}
+
+time#new-post-date {
+  color: #b4b4b4;
+  font-size: x-small;
+  letter-spacing: 0.08em;
 }
