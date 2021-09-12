@@ -2,6 +2,9 @@
 Theme Name: はじめてのWordPress自作テーマ
 */
 
+/*---------------------------------------------------
+  全体
+-----------------------------------------------------*/
 body {
   background-color: gainsboro;
 }
@@ -14,26 +17,26 @@ main {
   margin-left: auto;
 }
 
+/*---------------------------------------------------
+  投稿一覧
+-----------------------------------------------------*/
 #new-post-list {
   background-color: white;
   padding: 20px 5%;
 }
-
 #container {
   /* Grid表示する */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 30px;
 }
-
 #new-post {
   max-width: 250px;
 }
-
 h2#top-header {
   text-align: center;
+  margin-bottom: 40px;
 }
-
 h3#new-post-header {
   margin: 0;
 }
@@ -44,12 +47,10 @@ h3#new-post-header > a {
   transition: color 0.5s;
   text-decoration: none;
 }
-
-#new-post-img {
-  max-width: 100%;
-  height: auto;
+h3#new-post-header > a:hover {
+  color: silver;
+  text-decoration: none;
 }
-
 p#new-post-info {
   font-size: x-small;
   margin-top: 3px;
@@ -63,8 +64,7 @@ p#new-post-info {
   color: silver;
   text-decoration: none;
 }
-
 time#new-post-date {
-  color: #b4b4b4;
+  color: silver;
   letter-spacing: 0.08em;
 }
