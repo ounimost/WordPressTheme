@@ -14,7 +14,7 @@
   <!------------------------------------------------>
   <header class="site-header">
     <div class="wrapper site-header-wrapper">
-      <a href="#" class="brand">Brand</a>
+      <a href="#" class="brand">MY BLOG</a>
       <nav class="nav">
         <button class="nav-toggle" aria-expanded="false" type="button">menu</button>
         <ul class="nav-wrapper">

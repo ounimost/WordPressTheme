@@ -22,24 +22,32 @@ main {
 .brand {
   font-weight: bold;
   font-size: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.brand:hover {
+  color: silver;
 }
 
 .site-header {
   position: relative;
-  background-color: #def7ff;
+  background-color: dimgray;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .site-header-wrapper {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 0px 20px;
 }
 @media (min-width: 600px) {
   .site-header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0px 20px;
   }
 }
 @media (min-width: 600px) {
@@ -55,7 +63,7 @@ main {
     right: 0;
     left: 0;
     z-index: -1;
-    background-color: #d9f0f7;
+    background-color: dimgray;
     visibility: hidden;
     opacity: 0;
     transform: translateY(-100%);
