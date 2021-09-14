@@ -7,6 +7,7 @@ Theme Name: はじめてのWordPress自作テーマ
 -----------------------------------------------------*/
 body {
   background-color: gainsboro;
+  font-family: "Noto Sans JP", sans-serif;
 }
 main {
   max-width: 1200px;
@@ -25,6 +26,7 @@ main {
   color: whitesmoke;
   text-decoration: none;
   transition: color 0.5s;
+  letter-spacing: 4px;
 }
 .brand:hover {
   color: silver;
