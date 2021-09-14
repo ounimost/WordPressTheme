@@ -9,6 +9,23 @@
   <?php wp_head(); ?>
 </head>
 <body>
+  <!------------------------------------------------>
+  <!-- ヘッダ -->
+  <!------------------------------------------------>
+  <header class="site-header">
+    <div class="wrapper site-header-wrapper">
+      <a href="#" class="brand">Brand</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-expanded="false" type="button">menu</button>
+        <ul class="nav-wrapper">
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Category</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
     <!------------------------------------------------>
     <!-- 新着の記事一覧 -->
