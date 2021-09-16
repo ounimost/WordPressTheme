@@ -8,6 +8,7 @@ Theme Name: はじめてのWordPress自作テーマ
 body {
   background-color: gainsboro;
   font-family: "Noto Sans JP", sans-serif;
+  margin: 0px;
 }
 main {
   max-width: 1200px;
@@ -23,7 +24,7 @@ main {
 .brand {
   font-weight: bold;
   font-size: 20px;
-  color: whitesmoke;
+  color: dimgray;
   text-decoration: none;
   transition: color 0.5s;
   letter-spacing: 4px;
@@ -34,10 +35,7 @@ main {
 
 .site-header {
   position: relative;
-  background-color: dimgray;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: whitesmoke;
   margin-bottom: 20px;
 }
 
@@ -78,9 +76,19 @@ main {
   }
 }
 
-.nav-item a {
+/* nav */
+li.nav-item {
+  list-style: none;
+}
+li.nav-item > a {
   display: block;
   padding: 1.5rem 1rem;
+  color: dimgray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+li.nav-item > a:hover {
+  color: silver;
 }
 
 .nav-toggle {
