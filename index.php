@@ -16,16 +16,20 @@
   <!-- ヘッダ -->
   <!------------------------------------------------>
   <header class="site-header">
-    <div class="wrapper site-header-wrapper">
+    <div class="site-header-wrapper">
+
+      <!-- LOGO -->
       <a href="#" class="brand">MY BLOG</a>
+
+      <!-- Navi -->
       <nav class="nav">
-        <button class="nav-toggle" aria-expanded="false" type="button">menu</button>
         <ul class="nav-wrapper">
           <li class="nav-item"><a href="#">About</a></li>
           <li class="nav-item"><a href="#">Category</a></li>
           <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
