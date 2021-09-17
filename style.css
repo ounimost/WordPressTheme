@@ -46,32 +46,10 @@ main {
   justify-content: space-between;
 }
 
-@media (min-width: 600px) {
-  .nav-wrapper {
-    display: flex;
-  }
-}
-@media (max-width: 599px) {
-  .nav-wrapper {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    background-color: dimgray;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-  }
-  .nav-wrapper.active {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* nav */
+.nav-wrapper {
+  display: flex;
+}
 li.nav-item {
   list-style: none;
 }
