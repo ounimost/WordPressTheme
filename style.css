@@ -132,3 +132,17 @@ time#new-post-date {
   color: silver;
   letter-spacing: 0.08em;
 }
+
+/*---------------------------------------------------
+  Footer
+-----------------------------------------------------*/
+.site-footer {
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+.copyright {
+  text-align: center;
+  color: dimgray;
+  font-size: x-small;
+}
