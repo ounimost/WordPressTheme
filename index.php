@@ -34,7 +34,7 @@
     <!-- 新着の記事一覧 -->
     <!------------------------------------------------>
     <div id="new-post-list">
-      <h2 id="top-header">記事の一覧</h2>
+      <h2 id="top-header">ARTICLES</h2>
       <div id="new-post-container">
           <!-- 投稿の数だけ繰り返して処理する -->
           <?php while (have_posts()) : ?>
