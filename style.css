@@ -140,9 +140,11 @@ time#new-post-date {
   position: relative;
   background-color: whitesmoke;
   margin-top: 20px;
+  padding: 10px;
 }
 .copyright {
   text-align: center;
   color: dimgray;
   font-size: x-small;
+  letter-spacing: 2px;
 }
