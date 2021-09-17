@@ -46,16 +46,24 @@ main {
   justify-content: space-between;
 }
 
-/* nav */
-.nav-wrapper {
-  display: flex;
+@media (min-width: 600px) {
+  .nav-wrapper {
+    display: flex;
+  }
 }
+@media (max-width: 599px) {
+  .nav-wrapper {
+    line-height: 0px;
+  }
+}
+
+/* nav */
 li.nav-item {
   list-style: none;
 }
 li.nav-item > a {
   display: block;
-  padding: 1.5rem 1rem;
+  padding: 1rem 1rem;
   text-transform: uppercase;
   font-size: x-small;
   letter-spacing: 1.5px;
