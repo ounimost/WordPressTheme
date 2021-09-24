@@ -20,7 +20,7 @@
     <div class="site-header-wrapper">
 
       <!-- LOGO -->
-      <a href="#" class="brand">MY BLOG</a>
+      <a href="<?php echo home_url(); ?>" class="brand">MY BLOG</a>
 
       <!-- Navi -->
       <nav class="nav">
