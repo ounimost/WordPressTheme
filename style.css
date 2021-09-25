@@ -6,25 +6,51 @@ Theme Name: はじめてのWordPress自作テーマ
   全体
 -----------------------------------------------------*/
 body {
-  background-color: gainsboro;
+  background-color: #dddddd;
   font-family: "Noto Sans JP", sans-serif;
+  font-size: 90%;
   margin: 0px;
 }
-main {
+p {
+  line-height: 1.8;
+  margin-block-start: 0.7em;
+  margin-block-end: 0.7em;
+}
+
+/*---------------------------------------------------
+  topページ
+-----------------------------------------------------*/
+#main-top {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   background-color: whitesmoke;
 }
 
+/*---------------------------------------------------
+  投稿ページ
+-----------------------------------------------------*/
+#main-single {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: whitesmoke;
+}
+#content-single {
+  padding: 20px 10%;
+}
 .img-post {
   max-width: 100%;
+  display: block;
   height: auto;
-  margin: 20px 0;
+  margin: 20px auto;
+}
+.wp-block-image img {
+  height: auto;
 }
 
 /*---------------------------------------------------
-  記事の一覧
+  投稿一覧
 -----------------------------------------------------*/
 #content-area {
   padding: 20px 4%;

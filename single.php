@@ -3,10 +3,10 @@
 <!------------------------------------------------>
 <?php get_header(); ?>
 
-<main>
+<main id="main-single">
         <?php while (have_posts()) : ?>
           
-          <div id="content-area">
+          <div id="content-single">
             <!-- 投稿を取得 -->
             <?php the_post(); ?>
 
@@ -24,7 +24,7 @@
           <?php the_post_thumbnail('full', array( 'class' => 'img-post' ) ); ?>
 		      
           <!-- 中身 -->
-          <div id="content-area">
+          <div id="content-single">
           <?php the_content(); ?>
         </div>
 
