@@ -6,9 +6,9 @@ Theme Name: はじめてのWordPress自作テーマ
   全体
 -----------------------------------------------------*/
 body {
-  background-color: #dddddd;
+  background-color: #eee;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 90%;
+  font-size: 95%;
   margin: 0px;
 }
 p {
