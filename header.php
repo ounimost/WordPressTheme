@@ -25,9 +25,9 @@
       <!-- Navi -->
       <nav class="nav">
         <ul class="nav-wrapper">
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Category</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item"><a href="<?php echo home_url('/about'); ?>">About</a></li>
+          <li class="nav-item"><a href="<?php echo home_url('/works'); ?>">Works</a></li>
+          <li class="nav-item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
         </ul>
       </nav>
 

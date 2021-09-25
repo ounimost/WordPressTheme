@@ -20,7 +20,7 @@
             <time id="new-post-date" datetime="<?php the_time('Y-m-d'); ?>">作成日：<?php the_time('Y.m.d'); ?></time>
           </div>
 
-          <!-- 画像 -->
+          <!-- アイキャッチ画像 -->
           <?php the_post_thumbnail('full', array( 'class' => 'img-post' ) ); ?>
 		      
           <!-- 中身 -->
