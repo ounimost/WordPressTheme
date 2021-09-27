@@ -7,7 +7,7 @@
   <div id="content-area">
 
     <!-- カテゴリ名の表示 -->
-    <?php $title = single_term_title('', false); ?>
+    <?php $title = single_cat_title('', false); ?>
     <h2 id="top-header">CATEGORY : <?php echo $title; ?></h2>
 
     <div id="new-post-container">
