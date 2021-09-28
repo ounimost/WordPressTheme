@@ -106,6 +106,36 @@ time#new-post-date {
   letter-spacing: 0.08em;
 }
 
+/* ほかの記事ボタン */
+#center-btn {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+.btn,
+a.btn,
+button.btn {
+  font-size: x-small;
+  font-weight: 900;
+  display: inline-block;
+  padding: 8px 30px 8px 27px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-style: solid;
+  border-width: thin;
+  border-color: dimgray;
+  color: dimgray;
+  background-color: whitesmoke;
+}
+.btn:hover,
+a.btn:hover,
+button.btn:hover {
+  color: whitesmoke;
+  background: dimgray;
+}
+
 /*---------------------------------------------------
   Header
 -----------------------------------------------------*/

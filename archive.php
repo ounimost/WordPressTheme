@@ -8,7 +8,11 @@
 
     <!-- カテゴリ名の表示 -->
     <?php $title = single_cat_title('', false); ?>
-    <h2 id="top-header">CATEGORY : <?php echo $title; ?></h2>
+    <?php if ($title) : ?>
+      <h2 id="top-header">CATEGORY : <?php echo $title; ?></h2>
+    <?php else: ?>
+      <h2 id="top-header">ALL ARTICLES</h2>
+    <?php endif;?>
 
     <div id="new-post-container">
         <!-- 投稿の数だけ繰り返して処理する -->

@@ -8,7 +8,7 @@
   <!-- 新着の記事一覧 -->
   <!------------------------------------------------>
   <div id="content-area">
-    <h2 id="top-header">ARTICLES</h2>
+    <h2 id="top-header">NEW ARTICLES</h2>
     <div id="new-post-container">
         <!-- 投稿の数だけ繰り返して処理する -->
         <?php while (have_posts()) : ?>
@@ -35,6 +35,9 @@
 
         <?php endwhile; ?>
       </div>
+    </div>
+    <div id="center-btn">
+      <a href="<?php echo home_url('/blog'); ?>" class="btn">▶　ALL ARTICLES</a>
     </div>
   </div> 
 </main>
