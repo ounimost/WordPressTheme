@@ -37,7 +37,7 @@
       </div>
     </div>
     <div id="center-btn">
-      <a href="<?php echo home_url('/blog'); ?>" class="btn">▶　ALL ARTICLES</a>
+      <a href="<?php echo home_url('/post'); ?>" class="btn">▶　ALL ARTICLES</a>
     </div>
   </div> 
 </main>
