@@ -17,7 +17,7 @@
     <div class="new-post-container">
 
       <!-- ページの最大表示投稿数を変更 -->
-      <?php query_posts('posts_per_page=12'); ?>
+      <?php query_posts('posts_per_page=2'); ?>
 
       <!-- 投稿の数だけ繰り返して処理する -->
       <?php while (have_posts()) : ?>
@@ -36,6 +36,16 @@
 
       <?php endwhile; ?>
     </div>
+
+    <!-- ページネーション -->
+    <div class="post-pagenation">
+          <?php 
+            $pagination = get_the_posts_pagination(); 
+            $pagination = preg_replace('/\<h2(.*?)\<\/h2\>/', '', $pagination);
+            echo $pagination; 
+          ?>
+    </div>
+    
   </div> 
 </main>
 
