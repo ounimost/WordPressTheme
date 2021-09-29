@@ -3,14 +3,11 @@
 <!------------------------------------------------>
 <?php get_header(); ?>
 
-<main id="main-single">
+<main class="main-single">
   <?php while (have_posts()) : ?>
-    <div id="content-single">
-      <!-- 投稿を取得 -->
+    <div class="content-single">
       <?php the_post(); ?>
-      <!-- タイトル -->
-      <h1 id=""><?php echo the_title(); ?></h1>
-      <!-- 中身 -->
+      <h1><?php echo the_title(); ?></h1>
       <?php the_content(); ?>
     </div>
   <?php endwhile; ?>
