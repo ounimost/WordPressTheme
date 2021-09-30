@@ -17,8 +17,7 @@
     <div class="new-post-container">
 
       <!-- ページの最大表示投稿数を変更 -->
-      <?php query_posts('posts_per_page=2'); ?>
-
+      
       <!-- 投稿の数だけ繰り返して処理する -->
       <?php while (have_posts()) : ?>
         
