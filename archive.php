@@ -16,8 +16,6 @@
 
     <div class="new-post-container">
 
-      <!-- ページの最大表示投稿数を変更 -->
-      
       <!-- 投稿の数だけ繰り返して処理する -->
       <?php while (have_posts()) : ?>
         
