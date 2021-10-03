@@ -11,7 +11,6 @@
     <h2 class="top-header">NEW ARTICLES</h2>
     <div class="new-post-container">
 
-
       <!-- ページの最大表示投稿数を変更 -->
       <?php query_posts('posts_per_page=8'); ?>
 
@@ -41,6 +40,7 @@
       <?php endwhile; ?>
     </div>
 
+    <!-- ブログ投稿一覧ページへのリンク -->
     <div class="center-btn">
       <a href="<?php echo home_url('/blog'); ?>" class="btn">▶　ALL ARTICLES</a>
     </div>
