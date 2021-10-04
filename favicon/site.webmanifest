@@ -3,12 +3,12 @@
   "short_name": "",
   "icons": [
     {
-      "src": "/wptest/wp-content/themes/ouniWpTheme/favicon/android-chrome-192x192.png",
+      "src": "/wptest/wp-content/themes/WordPressTheme/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/wptest/wp-content/themes/ouniWpTheme/favicon/android-chrome-256x256.png",
+      "src": "/wptest/wp-content/themes/WordPressTheme/favicon/android-chrome-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
     }
