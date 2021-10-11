@@ -144,6 +144,11 @@ a.btn:hover,
 button.btn:hover {
   box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
 }
+.btn:active,
+a.btn:active,
+button.btn:active {
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
+}
 
 /*---------------------------------------------------
   検索フォーム
