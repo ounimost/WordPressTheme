@@ -24,7 +24,9 @@
 
         <!-- 投稿を表示 -->
         <div class="new-post">
-          <?php the_post_thumbnail( array( 250, 200 ), array( 'id' => 'new-post-img' ) ); ?>
+          <a href="<?php echo get_permalink(); ?>">
+            <?php the_post_thumbnail( array( 250, 200 ), array( 'class' => 'new-post-img' ) ); ?>
+          </a>
           <h3 class="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
           <p class="new-post-info">
             <time class="new-post-date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>

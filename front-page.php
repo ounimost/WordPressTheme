@@ -12,7 +12,7 @@
     <div class="new-post-container">
 
       <!-- ページの最大表示投稿数を変更 -->
-      <?php query_posts('posts_per_page=8'); ?>
+      <?php query_posts('posts_per_page=7'); ?>
 
       <!-- 投稿の数だけ繰り返して処理する -->
       <?php while (have_posts()) : ?>
@@ -24,7 +24,9 @@
         <div class="new-post">
 
           <!-- サムネイル画像を表示する -->
-          <?php the_post_thumbnail( array( 250, 200 ), array( 'id' => 'new-post-img' ) ); ?>
+          <a href="<?php echo get_permalink(); ?>">
+            <?php the_post_thumbnail( array( 250, 200 ), array( 'class' => 'post-img' ) ); ?>
+          </a>
 
           <!-- 投稿のタイトルを表示して、投稿ページへのリンクを張る -->
           <h3 class="new-post-header"><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></h3>
@@ -38,11 +40,12 @@
         </div>
 
       <?php endwhile; ?>
-    </div>
 
-    <!-- ブログ投稿一覧ページへのリンク -->
-    <div class="center-btn">
-      <a href="<?php echo home_url('/blog'); ?>" class="btn">▶　ALL ARTICLES</a>
+      <!-- ブログ投稿一覧ページへのリンク -->
+      <div class="center-btn">
+        <a href="<?php echo home_url('/blog'); ?>" class="btn">▶　ALL ARTICLES</a>
+      </div>
+
     </div>
 
   </div> 

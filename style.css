@@ -6,7 +6,7 @@ Theme Name: はじめてのWordPress自作テーマ
   全体
 -----------------------------------------------------*/
 body {
-  background-color: #eee;
+  background-color: whitesmoke;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 95%;
   margin: 0px;
@@ -65,6 +65,13 @@ p {
   max-width: 250px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+  color: dimgray;
+  background-color: whitesmoke;
+}
+.new-post:hover {
+  box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
 }
 h2.top-header {
   text-align: center;
@@ -75,7 +82,7 @@ h2.top-header {
 }
 /* 記事のタイトル */
 h3.new-post-header {
-  margin: 0;
+  margin: 10px;
 }
 h3.new-post-header > a {
   color: dimgray;
@@ -90,7 +97,7 @@ h3.new-post-header > a:hover {
 /* 記事の情報（カテゴリ・日付） */
 p.new-post-info {
   font-size: x-small;
-  margin-top: 3px;
+  margin: 10px;
 }
 .new-post-category > a {
   transition: color 0.5s;
@@ -112,6 +119,7 @@ time.new-post-date {
 .center-btn {
   text-align: center;
   padding: 25px 0;
+  align-self: center;
 }
 .btn,
 a.btn,
@@ -122,20 +130,53 @@ button.btn {
   padding: 8px 30px 8px 27px;
   cursor: pointer;
   user-select: none;
-  transition: all 0.3s;
+  transition: all 0.1s;
   text-decoration: none;
   letter-spacing: 0.1em;
-  border-style: solid;
-  border-width: thin;
-  border-color: dimgray;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
   color: dimgray;
   background-color: whitesmoke;
 }
 .btn:hover,
 a.btn:hover,
 button.btn:hover {
-  color: whitesmoke;
-  background: dimgray;
+  box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
+}
+
+/*---------------------------------------------------
+  検索フォーム
+-----------------------------------------------------*/
+.search_container {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.2em;
+  width: 200px;
+  overflow: hidden;
+  background: white;
+}
+.search_container input[type="text"] {
+  border: none;
+  height: 2em;
+  font-size: small;
+  background: white;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"] {
+  font-family: FontAwesome;
+  font-size: 1em;
+  border: none;
+  background: none;
+  color: dimgray;
+}
+.search_container ::-webkit-input-placeholder {
+  color: dimgray;
 }
 
 /*---------------------------------------------------
@@ -156,7 +197,6 @@ ul.page-numbers > li {
   width: 50px;
   text-align: center;
   float: left;
-  line-height: 50px;
   margin-right: 2px;
   font-weight: 900;
 }
@@ -173,17 +213,8 @@ ul.page-numbers > li > a:hover {
 /*---------------------------------------------------
   Header
 -----------------------------------------------------*/
-/* site brand */
-.brand {
-  font-weight: 900;
-  font-size: 20px;
-  color: dimgray;
-  text-decoration: none;
-  transition: color 0.5s;
-  letter-spacing: 8px;
-}
-.brand:hover {
-  color: silver;
+img.post-img:hover {
+  opacity: 0.5;
 }
 /* header bar */
 .site-header {
@@ -201,6 +232,7 @@ ul.page-numbers > li > a:hover {
 @media (min-width: 600px) {
   .nav-wrapper {
     display: flex;
+    padding: 0px 10px;
   }
 }
 @media (max-width: 599px) {
@@ -209,19 +241,28 @@ ul.page-numbers > li > a:hover {
   }
 }
 
+nav {
+  border-radius: 50px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
+  color: dimgray;
+  background-color: whitesmoke;
+  margin: 50px 0px;
+  padding: 0px 25px;
+}
 /* nav */
 li.nav-item {
   list-style: none;
 }
 li.nav-item > a {
   display: block;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-size: x-small;
   letter-spacing: 1.5px;
   color: dimgray;
   text-decoration: none;
-  transition: color 0.5s;
+  transition: color 0.2s;
+  margin: 0px 5px;
 }
 li.nav-item > a:hover {
   color: silver;
