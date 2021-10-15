@@ -225,10 +225,12 @@ img.post-img:hover {
 .site-header {
   position: relative;
   background-color: whitesmoke;
-  margin-bottom: 20px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .site-header-wrapper {
-  padding: 0px 5%;
+  padding: 0px 4%;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -246,17 +248,26 @@ img.post-img:hover {
   }
 }
 
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+}
+.logo-img {
+  width: 60px;
+  height: 60px;
+}
 nav {
-  border-radius: 50px;
-  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
   color: dimgray;
   background-color: whitesmoke;
-  margin: 50px 0px;
+  margin: 20px 0px;
   padding: 0px 25px;
 }
 /* nav */
 li.nav-item {
   list-style: none;
+  line-height: initial;
+  margin: 15px 10px;
 }
 li.nav-item > a {
   display: block;
@@ -268,9 +279,15 @@ li.nav-item > a {
   text-decoration: none;
   transition: color 0.2s;
   margin: 0px 5px;
+
+  border-radius: 50px;
+  box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
 }
 li.nav-item > a:hover {
-  color: silver;
+  box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
+}
+li.nav-item > a:active {
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
 }
 
 /*---------------------------------------------------

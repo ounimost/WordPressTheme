@@ -33,7 +33,7 @@
       <!-- LOGO -->
       <div class="logo">
         <a href="<?php echo home_url(); ?>">
-          <img class="post-img" src="<?php echo get_template_directory_uri(); ?>/favicon/apple-touch-icon.png" width="30%"/>
+          <img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/favicon/apple-touch-icon.png"/>
         </a>
       </div>
 
