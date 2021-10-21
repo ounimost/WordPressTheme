@@ -8,7 +8,7 @@
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/favicon/apple-touch-icon.png">
@@ -44,7 +44,7 @@
           <li class="nav-item"><a href="<?php echo home_url('/about'); ?>">about</a></li>
           <li class="nav-item"><a href="<?php echo home_url('/works'); ?>">Works</a></li>
           <li class="nav-item"><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
-          <!-- <li class="nav-item"><?php get_search_form(); ?></li> -->
+          <li class="nav-item"><?php get_search_form(); ?></li>
         </ul>
       </nav>
 

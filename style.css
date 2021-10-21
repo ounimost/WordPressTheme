@@ -90,6 +90,7 @@ h3.new-post-header > a {
   font-weight: 700;
   transition: color 0.5s;
   text-decoration: none;
+  display: inline-block;
 }
 h3.new-post-header > a:hover {
   color: silver;
@@ -157,18 +158,22 @@ button.btn:active {
   position: relative;
   box-sizing: border-box;
   display: block;
-  padding: 3px 10px;
+  padding: 4px 0px 4px 10px;
   border-radius: 20px;
   height: 2.2em;
-  width: 200px;
+  width: 150px;
   overflow: hidden;
   background: white;
+  box-shadow: inset 1px 1px 3px #bebebe, inset -1px -1px 3px #ffffff;
 }
 .search_container input[type="text"] {
   border: none;
   height: 2em;
   font-size: small;
   background: white;
+  box-shadow: none;
+  padding: 0px;
+  width: 110px;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
@@ -179,6 +184,8 @@ button.btn:active {
   border: none;
   background: none;
   color: dimgray;
+  box-shadow: none;
+  padding: 0px;
 }
 .search_container ::-webkit-input-placeholder {
   color: dimgray;
